@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktikum JavaScript Pertemuan 6</title>
+</head>
+<body>
+    <h1>Praktikum JavaScript</h1>
+
+    <h2>Latihan 1 dan 2: Output</h2>
+    <p id="pesan">Pesan awal</p>
+    <button onclick="sapaPengguna()">Masukkan Nama</button>
+
+    <hr>
+
+    <h2>Latihan 3: Operasi Aritmetika</h2>
+    <button onclick="operasiDariPrompt()">Hitung Dua Bilangan</button>
+
+    <hr>
+
+    <h2>Latihan 4: Seleksi If-Else</h2>
+    <button onclick="cekNilaiPrompt()">Periksa Kelulusan</button>
+
+    <hr>
+
+    <h2>Latihan 5: Seleksi Switch</h2>
+    <button onclick="pilihBilangan()">Pilih Angka 1-5</button>
+
+    <hr>
+
+    <h2>Latihan 6: Genap atau Ganjil</h2>
+    <label for="bilangan">Masukkan bilangan bulat:</label>
+    <input type="number" id="bilangan" step="1">
+    <button type="button" onclick="cekBilangan()">Periksa</button>
+    <p id="hasilBilangan"></p>
+
+    <hr>
+
+    <h2>Latihan 7: Mengubah Warna</h2>
+    <button onclick="ubahWarnaLatar('lightgreen')">Latar Hijau</button>
+    <button onclick="ubahWarnaLatar('white')">Latar Putih</button>
+    <button onclick="ubahWarnaLatar('lightyellow')">Latar Kuning</button>
+
+    <hr>
+
+    <h2>Latihan 8: Daftar Menu Makanan</h2>
+    <label>
+        <input type="checkbox" class="menu" value="5000">
+        Ayam Goreng — Rp5.000
+    </label><br>
+
+    <label>
+        <input type="checkbox" class="menu" value="500">
+        Tempe — Rp500
+    </label><br>
+
+    <label>
+        <input type="checkbox" class="menu" value="2500">
+        Telur Dadar — Rp2.500
+    </label><br>
+
+    <label>
+        <input type="checkbox" class="menu" value="3000">
+        Es Teh — Rp3.000
+    </label><br>
+
+    <label>
+        <input type="checkbox" class="menu" value="4000">
+        Nasi Putih — Rp4.000
+    </label><br>
+
+    <p>Total: Rp<span id="total">0</span></p>
+
+    <hr>
+
+    <h2>Mini Project: Kalkulator Nilai Mahasiswa</h2>
+
+    <form id="formNilai">
+        <label for="tugas">Nilai Tugas (0-100):</label><br>
+        <input type="number" id="tugas" min="0" max="100"
+               step="any" required><br><br>
+
+        <label for="uts">Nilai UTS (0-100):</label><br>
+        <input type="number" id="uts" min="0" max="100"
+               step="any" required><br><br>
+
+        <label for="uas">Nilai UAS (0-100):</label><br>
+        <input type="number" id="uas" min="0" max="100"
+               step="any" required><br><br>
+
+        <button type="submit">Hitung Nilai Akhir</button>
+    </form>
+
+    <div id="hasilNilai" aria-live="polite"></div>
+
+    <hr>
+
+    <h2>Eksperimen: Tabel Perkalian 7</h2>
+    <button onclick="tampilkanPerkalian()">Tampilkan Tabel</button>
+    <pre id="tabelPerkalian"></pre>
+
+    <hr>
+
+    <h2>Eksperimen: Tampilkan atau Sembunyikan</h2>
+    <button onclick="togglePesan()">Tampilkan/Sembunyikan Pesan</button>
+    <p id="pesanToggle">Ini adalah teks yang bisa disembunyikan.</p>
+
+    <script src="script.js"></script>
+</body>
+</html>
